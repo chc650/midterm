@@ -106,8 +106,21 @@ section{
 
 }
 
+
+.mainPage.red.btn:hover{
+   
+    color: green;
+    cursor: pointer;
+
+}
+
+
+
+
 .btn:hover{
     cursor: pointer;
+    transition: color .8s;
+    color: orange;
 }
 
 
