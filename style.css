@@ -2,6 +2,8 @@
 
 @import url(https://fonts.googleapis.com/css?family=Buenard|Work+Sans&display=swap);
 
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif+TC&display=swap);
+
 
 
 
@@ -28,7 +30,7 @@ body{
 
 p{
 
-    font-family: 'Work Sans', sans-serif;
+    /* font-family: 'Work Sans', sans-serif; */
     line-height: 2;
 }
 
