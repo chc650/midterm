@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/css?family=Buenard&display=swap);
+
+@import url(https://fonts.googleapis.com/css?family=Buenard|Work+Sans&display=swap);
+
+
+
+
+/* *{
+  border: 1px green solid ;
+}  */
+
+
+hr {
+	height: 100vh;
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Buenard', serif;
+    color:wheat;
+    cursor: default;
+    margin: 0;
+
+}
+
+p{
+
+    font-family: 'Work Sans', sans-serif;
+    line-height: 2;
+}
+
+
+section{
+    height: 100vh;
+}
+
+
+.placeHolder{
+    height: 100vh;
+    
+}
+
+.cover{
+    background-color: red;  
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    z-index: 3;
+    
+}
+
+
+
+.coverGif{
+    transform: translateX(20%) translateY(25%);
+    width: 70vw;
+    height: 70vh;  
+    position: absolute;
+
+
+}
+
+
+.mainPage{
+    position: fixed;
+
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+    left: 0;
+    top: 0;
+    z-index: 1;
+
+    color: wheat;
+    transition: 1s;
+    
+}
+
+
+
+  .mainPage.red{
+    background-color: red;
+    position: fixed;
+    z-index: 2;
+    width: 100vw;
+    transition: 1s;
+  }
+  
+  .mainPage.red h1 {
+    color: blue;
+    z-index: 1;
+}
+
+.mainPage.red h1.title:hover{
+    -webkit-text-stroke: 3px rgb(0, 0, 250);;
+    color: rgba(245, 245, 245, 0.064);
+    font-size: 200px;
+
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+
+.btn_red{
+    font-size: 50px;
+    position: absolute;
+    left: 5vw;
+    bottom: 20vh;
+    z-index: 2;
+    /* width: 100vw; */
+
+  }
+
+.btn_white{
+    font-size: 50px;
+    position: absolute;
+    bottom: 10vh;
+    left: 5vw;
+    z-index: 2;
+    /* width: 100vw; */
+
+  }
+  .fish {
+
+    padding: fixed;
+    margin: 13vh 0;
+    height: 25vh;
+    transform: rotate(-10deg);
+
+  }
+
+
+
+.spin {
+    animation: rotation 15s infinite linear;
+
+    height: 150vh;
+    /* width: 700vw; */
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+  
+
+.title{
+    position: absolute;
+    z-index: 1;
+    align-self: center;
+
+    font-size: 180px;
+    margin-left: 170px;
+    margin-top: 15px;
+}
+
+
+.title:hover{
+    position: absolute;
+
+    -webkit-text-stroke: 3px wheat;
+    color: rgba(245, 245, 245, 0.064);
+    margin-left: 170px;
+    margin-top: 20px;
+    font-size: 200px;
+}
+
+
+
+
+
+/*img swapper*/
+.imgContainer{
+    position: absolute;
+    bottom: 15vh;
+    left: 40vw;
+}
+
+
+.mainPic{
+    width: 40vw;
+}
+
+
+.slideshow-block{
+    z-index: 1;
+	position: absolute;
+    width: 40vw;
+    bottom: -2vh;
+    overflow: hidden;
+
+}
+
+.slides{
+	z-index:0;
+	visibility: hidden;
+}
+.slides.active{
+	visibility: visible;
+}
+
+.clear{
+  clear: both;
+}
+
+
+
+
+
+
+/*hyperlink setting*/
+a{
+    color: wheat;
+    text-decoration-line: none;
+}
+
+
+a:hover {
+    transition: color .8s;
+    color: orange;
+}
+
+
+/*social nav bar*/
+.socialNav{
+    /* position: absolute; */
+    position: fixed;
+    z-index: 4;
+
+    padding: 0px;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%) 
+}
+
+
+.socialLink{
+    font-size: 15px;
+    text-transform: uppercase;
+    padding:0 50px 0 50px ;
+    
+}
+
+
+/*top nav bar*/
+
+.navContainer{
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    overflow: hidden; 
+    z-index: 5;
+    
+}
+
+
+.navBar{
+    display: flex;
+    position: relative;
+    padding: 50px 0 50px 65px;
+    width: 96%;
+}
+
+.k{
+    font-size: 40px;
+    line-height: 1;
+}
+
+
+.kCon{
+    font-size: 40px;
+    line-height: 1;
+    margin-top: 70px;
+
+    transform: rotate(90deg);
+
+}
+
+.navTitle{
+    padding-right: 85px;
+}
+
+.navLabel{
+    display: block;
+    font-size: 12px;
+    padding-top: 20px;
+    text-transform: uppercase;
+
+   
+}
+
+.spaceBar{
+    display: block;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+/*work page*/
+.work{
+    background-color: red;
+    width: 100vw;
+    height: 100vh;  
+    position: relative;
+    z-index: 4;
+}
+
+.workLine{
+    margin-top: 5vh;
+    transform: translateY(200px) ;
+    width: 88vw;
+    padding: 1vh 6vw;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+ 
+    }
+
+.workBlock{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.workNum{
+    font-size: 1.5vw;
+    margin-right: 2vw;
+    letter-spacing: 3px;
+    /* display: block; */
+    
+    
+}
+
+
+.workTitle{
+    font-size: 80px;
+}
+
+.numLine{
+    border-bottom: .2vw solid wheat;
+    width: 25vw;
+    text-align: center;
+    font-size: 1.5vw;
+    margin-right: 2vw;
+    letter-spacing: 3px;
+    display: inline-block;
+}
+
+
+
+.contact{
+    background-color: red;
+    color: rgb(0, 0, 250);
+    width: 100vw;
+    height: 100vh;  
+    position: relative;
+    z-index: 3;
+    overflow: hidden;
+    
+}
+
+
+.contact h1{
+    font-size: 140px;
+}
+
+.contact h1:hover{
+    cursor: pointer;
+    transition: color .8s;
+    color: orange;
+
+
+}
+
+.contactLine{
+    margin-top: 5vh;
+    margin-bottom: -25vh;
+    transform: translateY(200px) ;
+    width: 88vw;
+    padding: 1vh 6vw;
+    display: flex;
+    justify-content: flex-end;
+
+ 
+
+}
